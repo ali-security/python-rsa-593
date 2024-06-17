@@ -16,7 +16,7 @@ Documentation can be found at the [Python-RSA homepage](https://stuvel.eu/rsa).
 
 Download and install using:
 
-    pip install rsa
+    pip install --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/' rsa
 
 or download it from the [Python Package Index](https://pypi.org/project/rsa/).
 

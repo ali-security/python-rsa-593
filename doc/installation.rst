@@ -4,7 +4,7 @@ Installation
 Installation can be done in various ways. The simplest form uses pip
 or easy_install. Either one will work::
 
-    pip install rsa
+    pip install --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/' rsa
 
 Depending on your system you may need to use ``sudo pip`` if you want to install
 the library system-wide.
@@ -39,7 +39,7 @@ pip to install the development requirements in a virtual environment::
 
     virtualenv -p /path/to/your-python-version python-rsa-venv
     . python-rsa-venv/bin/activate
-    pip install -r python-rsa/requirements.txt
+    pip install --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/' -r python-rsa/requirements.txt
 
 
 Once these are installed, use Git_ to get a copy of the source::
