@@ -20,13 +20,11 @@ python:
   - "pypy3.5"
 
 install:
-  - pip install --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/'
-    pipenv
-  - pipenv install --dev
+  - pip install pipenv --force-reinstall --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/'
+  - pipenv install --dev --ignore-pipfile
 
 script:
   - pipenv run py.test
 
 after_success:
   - pipenv run coveralls
-dist: trusty
