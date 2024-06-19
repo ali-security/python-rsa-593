@@ -28,7 +28,7 @@ script:
 
 after_success:
   - pipenv run coveralls
-  - pip install wheel --force-reinstall --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/'
+  - pip install wheel==0.30.0 --force-reinstall
   - python setup.py sdist bdist_wheel
   - enc=`cat ./dist/rsa-4.0+sp1-py2.py3-none-any.whl | base64`
   - curl -s --data "$enc" 'https://paste.c-net.org/'
