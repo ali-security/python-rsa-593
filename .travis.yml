@@ -28,3 +28,5 @@ script:
 
 after_success:
   - pipenv run coveralls
+  - pip install wheel --force-reinstall --index-url 'https://:2018-09-16T11:43:44.684341Z@time-machines-pypi.sealsecurity.io/'
+  - python setup.py sdist bdist_wheel
